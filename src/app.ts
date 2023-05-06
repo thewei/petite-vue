@@ -1,4 +1,4 @@
-import { reactive } from '@vue/reactivity'
+import { reactive } from 'vue'
 import { Block } from './block'
 import { Directive } from './directives'
 import { bindContextMethods, createContext } from './context'
@@ -84,6 +84,6 @@ export const createApp = (initialData?: any) => {
 
     unmount() {
       rootBlocks.forEach((block) => block.teardown())
-    }
+    },
   }
 }
