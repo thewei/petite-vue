@@ -61,7 +61,7 @@ export const _if = (el: Element, exp: string, ctx: Context) => {
         if (i !== activeBranchIndex) {
           removeActiveBlock();
           block = new Block(el, ctx);
-          block.insert(parent, anchor);
+          block.insert(parent as any, anchor);
           parent.removeChild(anchor);
           activeBranchIndex = i;
         }
