@@ -1,4 +1,3 @@
-import { reactive } from 'vue'
 import { Block } from './block'
 import { Directive } from './directives'
 import { bindContextMethods, createContext } from './context'
@@ -12,7 +11,7 @@ export const createApp = (initialData?: any) => {
   // root context
   const ctx = createContext()
   if (initialData) {
-    ctx.scope = reactive(initialData)
+    ctx.scope = window.Vue.reactive(initialData)
     bindContextMethods(ctx.scope)
 
     // handle custom delimiters

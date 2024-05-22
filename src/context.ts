@@ -24,7 +24,7 @@ export const createContext = (parent?: Context): Context => {
     delimiters: ['{{', '}}'],
     delimitersRE: /\{\{([^]+?)\}\}/g,
     ...parent,
-    scope: parent ? parent.scope : reactive({}),
+    scope: parent ? parent.scope : window.Vue.reactive({}),
     dirs: parent ? parent.dirs : {},
     effects: [],
     blocks: [],

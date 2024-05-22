@@ -1,6 +1,6 @@
 {
   "name": "petite-vue",
-  "version": "0.6",
+  "version": "0.6.2",
   "description": "5kb subset of Vue optimized for progressive enhancement",
   "files": [
     "dist"
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/vuejs/petite-vue#readme",
   "devDependencies": {
+    "@babel/types": "^7.24.5",
     "@vue/shared": "^3.2.27",
     "chalk": "^4.1.1",
     "conventional-changelog-cli": "^2.1.1",
